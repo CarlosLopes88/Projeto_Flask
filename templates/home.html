@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Aplicação Dev Python </title>
+    <link rel="stylesheet" href="../static/style/reset.css">
+    <link rel="stylesheet" href="../static/style/style_home.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container_header">
+            <div class="container_banner">
+                <img class="banner" src="../static/img/logo_usc.png" alt="Logo">
+            </div>
+            <div class="container_botoes">
+                <a href="{{ url_for('get_home') }}" class="button-link"> HOME </a>
+                <a href="{{ url_for('get_service') }}" class="button-link"> SERVIÇOS </a>
+                <a href="{{ url_for('get_contact') }}" class="button-link"> CONTATO </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <h2 class="tilulo_conteudo"> Turma de Linguagem de Programação Python</h2>
+                <div class="container_imagem_descricao">
+                    <img class="imagem_main" src="../static/img/sala.jpg" alt="Logo">
+                    <p id="descricao">Localizada no terceiro andar do campus do Centro Universitário Santa Cruz,
+                    onde iniciamos o processo de aprendizado da linguagem Python e também nossas aulas teóricas de Big Data 
+                    posteriormente migramos para o laboratório 220.
+                    </p>
+                </div>
+
+                <div class="container_imagem_descricao">
+                    <p id="descricao">Localizada no terceiro andar do campus do Centro Universitário Santa Cruz,
+                    onde iniciamos o processo de aprendizado da linguagem Python e também nossas aulas teóricas de Big Data 
+                    posteriormente migramos para o laboratório 220.
+                    </p>
+                    <img class="imagem_main" src="../static/img/lab.jpg" alt="Logo">
+                </div>
+        </div>
+
+        <div class="video">
+            <h3 class="tilulo_conteudo"> Video Youtube</h3>
+            <iframe width="1000" height="500" src="https://www.youtube.com/embed/rg5yo1-U4ws"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
+        <section class="mapa">
+            <h3 class="tilulo_conteudo">Nossa localização</h3>
+            <p id="descricao">Nosso estabeleciamento e turma está localizado no coração do bairro Novo Mundo</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14405.
+            116024308942!2d-49.302682!3d-25.4957399!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+            1s0x94dce34a3a555555%3A0xac1cc832636de5e9!2sUniSantaCruz!5e0!3m2!1spt-BR!
+            2sbr!4v1695592582936!5m2!1spt-BR!2sbr" width="80%" height="450" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <img class="imagem_rodape" src="../static/img/logo_usc.png" alt="Logo">
+        <p class="texto_copyrigth">&copy; Copyright by Python Aplication Class S/A</p>
+    </footer>
+
+</body>
+
+</html>

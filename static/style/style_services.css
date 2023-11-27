@@ -1,0 +1,140 @@
+body {
+    padding: 20px 20px;
+    background: #F5F5F5;
+}
+
+header {
+    width: 100%;
+}
+
+.container_header {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+}
+
+.container_botoes{
+    padding: 20px 10px;
+    margin: 10px 10px;
+    height: 50px;
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+}
+
+.button-link{
+    padding: 15px 0;
+    background: #09123C;
+    border: 5px solid #FF6600;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    padding: 15px 0;
+    background-color: #FF6600;
+    border-color: #09123C;
+    text-align: center;
+    text-decoration: none;
+}
+
+main{
+    background: #FFFFFF;
+    text-align: center;
+}
+
+main{
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.tilulo_conteudo {
+    text-align: center;
+    font-size: 80px;
+    padding: 16px 16px 80px 16px;
+    font-weight: bold;
+    clear: left;
+}
+
+#descricao {
+    flex: 2; /* Ocupar todo o espaço disponível */
+    margin-left: 20px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+    font-size: 32px;
+    padding: 16px 16px;
+}
+
+.servicos {
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.servicos li {
+    height: 450px;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 3px solid #09123C;
+    border-radius: 20px;
+}
+
+.servicos li:hover {
+    border-color: #FF6600;
+}
+
+.servicos li:active {
+    border-color: #FF6600;
+}
+
+.servicos li:hover h2 {
+    border-color:  #FF6600;
+    font-size: 34px;
+}
+
+.servicos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.imagem_grid {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.servico_descricao {
+    font-size: 18px;
+}
+
+.preco_servico {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 20PX 0;
+}
+
+.imagem_rodape {
+    height: 80px;
+    width: 300px;
+}
+
+.texto_copyrigth {
+    color: #2F4F4F ;
+    font-size: 16px;
+    margin-top: 20px;
+}

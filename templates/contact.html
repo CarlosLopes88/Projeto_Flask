@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Aplicação Dev Python </title>
+    <link rel="stylesheet" href="../static/style/reset.css">
+    <link rel="stylesheet" href="../static/style/style_contact.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container_header">
+            <div class="container_banner">
+                <img class="banner" src="../static/img/logo_usc.png" alt="Logo">
+            </div>
+            <div class="container_botoes">
+                <a href="{{ url_for('get_home') }}" class="button-link"> HOME </a>
+                <a href="{{ url_for('get_service') }}" class="button-link"> SERVIÇOS </a>
+                <a href="{{ url_for('get_contact') }}" class="button-link"> CONTATO </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <form method="POST" action="/contato">
+            <label for="nome_e_sobrenome">Nome e Sobrenome</label>
+            <input class="input_padrao" type="text" id="nome_e_sobrenome" name="nome_e_sobrenome" required>
+        
+            <label for="email">E-mail</label>
+            <input class="input_padrao" type="email" id="email" name="email" required 
+            placeholder="seuemail@dominio.com">
+        
+            <label for="telefone">Telefone</label>
+            <input class="input_padrao" type="tel" id="telefone" name="telefone" required 
+            placeholder="(XX) XXXXX-XXXX">
+        
+            <label for="mensagem">Mensagem</label>
+            <textarea class="input_padrao" cols="60" rows="10" id="mensagem" name="mensagem" required></textarea>
+        
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label class="checkbox"for="radio_email"><input type="radio" name="contato" 
+                    value="email" id="radio_email">
+                    E-mail</label>
+        
+                <label class="checkbox" for="radio_telefone"><input type="radio" name="contato" 
+                    value="telefone" id="radio_telefone">
+                    Telefone</label>
+        
+                <label class="checkbox" for="radio_whatsapp"><input type="radio" name="contato" 
+                    value="whatsapp" id="radio_whatsapp" checked>
+                    WhatsApp</label>
+            </fieldset>
+           
+            <label class="checkbox"><input type="checkbox" name="receber_informacoes" checked>
+                Gostaria de receber nossas informações por e-mail?</label>
+        
+            <input class="enviar" type="submit" value="Enviar Formulário">
+        </form>
+        
+
+        <section class="mapa">
+            <h3 class="tilulo_conteudo">Nossa localização</h3>
+            <p id="descricao">Nosso estabeleciamento e turma está localizado no coração do bairro Novo Mundo</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14405.
+            116024308942!2d-49.302682!3d-25.4957399!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+            1s0x94dce34a3a555555%3A0xac1cc832636de5e9!2sUniSantaCruz!5e0!3m2!1spt-BR!
+            2sbr!4v1695592582936!5m2!1spt-BR!2sbr" width="80%" height="450" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <img class="imagem_rodape" src="../static/img/logo_usc.png" alt="Logo">
+        <p class="texto_copyrigth">&copy; Copyright by Python Aplication Class S/A</p>
+    </footer>
+
+</body>
+
+</html>

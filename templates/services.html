@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Aplicação Dev Python </title>
+    <link rel="stylesheet" href="../static/style/reset.css">
+    <link rel="stylesheet" href="../static/style/style_services.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container_header">
+            <div class="container_banner">
+                <img class="banner" src="../static/img/logo_usc.png" alt="Logo">
+            </div>
+            <div class="container_botoes">
+                <a href="{{ url_for('get_home') }}" class="button-link"> HOME </a>
+                <a href="{{ url_for('get_service') }}" class="button-link"> SERVIÇOS </a>
+                <a href="{{ url_for('get_contact') }}" class="button-link"> CONTATO </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <ul class="servicos">
+            <li>
+                <h2>Engenharia de Software</h2>
+                <img class="imagem_grid" src="../static/img/01_servico.jpg" alt="imagem servico1">
+                <p class="servico_descricao">É a área profissional responsável pela criação, manutenção e desenvolvimento de sistemas.</p>
+                <p class="preco_servico">R$25.000</p>
+            </li>
+            <li>
+                <h2>Engenharia de Dados e Cloud</h2>
+                <img class="imagem_grid" src="../static/img/02_servico.jpg" alt="imagem servico2">
+                <p class="servico_descricao">É uma área que trata da transformação dos dados brutos de uma empresa.</p>
+                <p class="preco_servico">R$18.000</p>
+            </li>
+            <li>
+                <h2>Análise e Ciência de Dados</h2>
+                <img class="imagem_grid" src="../static/img/03_servico.jpg" alt="imagem servico3">
+                <p class="servico_descricao">É o estudo que combina práticas de matemática, estatística
+                    , inteligência artificial e engenharia da computação.</p>
+                <p class="preco_servico">R$35.000</p>
+            </li>
+        </ul>
+ 
+        <section class="mapa">
+            <h3 class="tilulo_conteudo">Nossa localização</h3>
+            <p id="descricao">Nosso estabeleciamento e turma está localizado no coração do bairro Novo Mundo</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14405.
+            116024308942!2d-49.302682!3d-25.4957399!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+            1s0x94dce34a3a555555%3A0xac1cc832636de5e9!2sUniSantaCruz!5e0!3m2!1spt-BR!
+            2sbr!4v1695592582936!5m2!1spt-BR!2sbr" width="80%" height="450" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <img class="imagem_rodape" src="../static/img/logo_usc.png" alt="Logo">
+        <p class="texto_copyrigth">&copy; Copyright by Python Aplication Class S/A</p>
+    </footer>
+
+</body>
+
+</html>
