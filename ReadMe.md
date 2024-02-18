@@ -15,6 +15,33 @@ Esse projeto utiliza o framework Flask, FastAPI e SQLite para o seu desenvolvime
 - **Estrutura de imagens:** Estão localizados nos arquivos estáticos na pasta img. 
 - **README.md:** Este arquivo.
 
+## Estrutura de Diretórios
+
+/
+├── Projeto_Flask (pasta principal)
+│   ├── static (pasta de arquivos estáticos)
+│   │   ├── img (pasta de imagens dentro da pasta static)
+│   │   │   ├── 01_servico.jpg
+│   │   │   ├── 02_servico.jpg
+│   │   │   ├── 03_servico.jpg
+│   │   │   ├── lab.jpg
+│   │   │   ├── logo_usc.png
+│   │   │   └── sala.jpg
+│   │   └── style (pasta de arquivos css dentro da pasta static)
+│   │       ├── reset.css 
+│   │       ├── style_contact.css
+│   │       ├── style_home.css
+│   │       └── style_services.css
+│   ├── templates (pasta de arquivos html)
+│   │   ├── contact.html
+│   │   ├── home.html
+│   │   └── services.html
+│   ├── ReadMe.md
+│   ├── api_app.py
+│   ├── create_db.py
+│   └── main.py
+
+
 Pouco a pouco vamos incrementando esse código e deixando mais robustos.
 
 Esse projeto utiliza Python, HTML e CSS, onde utilizamos o framework FLASK, FastAPI, SQLite, Uvicorn e requests.
